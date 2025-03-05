@@ -1,0 +1,6 @@
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Сақтау</button>
+</form>
+<a href="{% url 'todo_list' %}">Артқа қайту</a>

@@ -1,0 +1,9 @@
+{% for todo in todos %}
+    <h3>{{ todo.title }}</h3>
+    <p>{{ todo.description }}</p>
+    <p><strong>Аяқталу күні:</strong> {{ todo.due_date }}</p>
+    <p><strong>Статус:</strong> {% if todo.status %}✅ Аяқталған {% else %}❌ Аяқталмаған {% endif %}</p>
+    <a href="{% url 'delete_todo' todo.id %}">Жою</a>
+    <hr>
+{% endfor %}
+<a href="{% url 'create_todo' %}">Жаңа тапсырма қосу</a>

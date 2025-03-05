@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список фильмов</title>
+</head>
+<body>
+    <h1>Фильмы</h1>
+    <ul>
+        {% for movie in movies %}
+            <li>{{ movie.title }} - {{ movie.producer }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Статьи</title>
+</head>
+<body>
+    <h1>Статьи</h1>
+    <ul>
+        {% for article in articles %}
+            <li>{{ article.title }} - {{ article.author }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
